@@ -7,7 +7,7 @@
 }
 
 body{
-background-color: #D8DFE8;
+background-color: #F3F5FC;
 }
 
 header{
@@ -25,17 +25,24 @@ main{
 }
 
 .left__div__texto{
-    border: none;
     outline: 0;
-    background-color: #D8DFE8;
+    background-color: #F3F5FC;
     font-family: "inter", sans-serif;
     font-size: 2rem;
     font-weight: 400;
     padding-top: none;
     color:  #0A3871;
-    height: 100%;
+    height: 80%;
     width: 90%;
+    scroll-padding: 10%;
 }
+
+.info {
+    display: flex;
+    
+    gap: 30%;
+}
+
 textarea::placeholder{
     font-family: "inter", sans-serif;
     font-size: 2rem;
@@ -48,39 +55,41 @@ textarea::placeholder{
 .right__div{
     background-color: #FFFFFF;
     border-radius: 32px;
+    width: 35rem;
 }
 
-.inserir__botoes{
+.inserir__botoes {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 5%;
-}
-button{
-    flex: 1;
-    max-width: 100%;
-    height: 67px;
-    border-radius: 24px;
-    font-family:"inter", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
-    text-align: center;
-    padding: 0 1.5rem;
-    border: none;
-    cursor: pointer;
-    margin-right: 0.5rem;
+    gap: 5%;    
+    padding: 20px;
+    width: 100%
     
 }
-.inserir__botoes__botao1{
+
+.inserir__botoes button {
+    border-radius: 24px;
+    font-family: "inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    width: 220px; /* Largura ajustada para refletir a imagem */
+    height: 60px; /* Altura ajustada para refletir a imagem */
+    outline-color: #0A3871;
+    border: 2% #0A3871;
+}
+
+.inserir__botoes__botao1 {
     background-color: #0A3871;
     color: #FFFFFF;
 }
 
-.inserir__botoes__botao2{
+.inserir__botoes__botao2 {
     background-color: #D8DFE8;
     color: #0A3871;
-    border: 1px solid #0A3871;
+    border: 2% #0A3871;
+    outline-color: #0A3871;
 }
 
 footer{
@@ -90,4 +99,3 @@ footer{
     padding: 10px;
     text-align: center
 }
-

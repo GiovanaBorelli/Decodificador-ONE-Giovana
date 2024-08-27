@@ -6,8 +6,13 @@
     border:0
 }
 
+html{
+    height: 100%;
+}
+
 body{
-background-color: #F3F5FC;
+    background-color: #F3F5FC;
+    height: 100%;
 }
 
 header{
@@ -17,7 +22,7 @@ header{
 }
 
 main{
-    gap: 10rem;
+    gap: 8rem;
     height: 45rem;
     display: flex;
     justify-content: center;
@@ -90,7 +95,6 @@ textarea::placeholder{
 
 .right__div{
     flex: 1;
-    min-height: 70%;
     background-color: #FFFFFF;
     padding: 30px;
     padding-top: none;
@@ -102,12 +106,13 @@ textarea::placeholder{
     justify-content: center;
     align-items: center;
     max-width: 80%;
+    margin: 0 0 3% 0;
 }
 
 .right__div__imagem{
-    width: 100%;
+    width: 60%;
     height: auto;
-    padding: 0;   
+    padding: 5px; 
 }
 
 .right__div__mensagem{
@@ -128,7 +133,7 @@ textarea::placeholder{
     text-align: center;
 }
 
-.right__div__botao_copiar{
+.div__botao__copiar{
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -138,28 +143,93 @@ textarea::placeholder{
     margin-bottom: 30px;
 }
 
-.right__div__botao_copiar button{
+.div__botao__copiar button {
+    font-family: "inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0A3871;
     padding: 15px 30%;
     border: 2px solid #0A3871;
-    border-radius: 32px;
+    border-radius: 24px;
     font-size: 16px;
     cursor: pointer;
     background-color: #FFFFFF;
-    color: #0A3871;
     width: 100%; 
 }
 
-.right__div__botao_copiar button:active{
+.div__botao__copiar button:active {
     background-color: #0A3871;
-    color: #FFFFFF
+    color: #ffffff;
+}
+
+.div__botao__copiar .div__botao__copiar__botao {
+    background-color: #FFFFFF;
+    color: #0A3871;
+    border: 1px solid #0A3871;
 }
 
 footer{
+    font-family: "inter", sans-serif;
+    font-size: 1rem;
     background-color: #0A3871;
-    font-family:"inter", sans-serif;
-    font-size: 14px;
+    padding: 20px;
+    text-align: center;
     color: #FFFFFF;
-    padding-top: 20px;
-    padding: 0 10px;
-    text-align: center
+    width: 100%;
 }
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .left__div{
+        margin-left: 0; 
+        margin-bottom: 0; 
+        width: 100%; 
+    }
+
+    .right__div__imagem{
+        display: none;
+    }
+    .right__div{
+        height: 1rem;
+
+    }
+}
+
+@media(max-width: 500px){
+    header{
+        padding: 20px 0 50px 0;
+    }
+    
+    .left__div__texto{
+        height:50%;
+        margin: 30% 0 0 0;
+    }
+
+    .right__div{
+        width: 90%;
+        height: 10%;
+    }
+    
+    .left__div{
+        height: 70%;
+        margin-left: 0; 
+        margin-bottom: 0; 
+        width: 100%; 
+    }
+
+    .left__div .inserir__botoes{
+        flex-direction: column;
+        gap: 0.5rem; 
+        width: 100%;
+    }
+    .left__div .inserir__botoes button{
+        width: 90%; 
+        padding: 15px;
+    }
+}
+

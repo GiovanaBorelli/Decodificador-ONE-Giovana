@@ -10,22 +10,22 @@
     <header> <img src="/Assets/Logo_Alura.png" alt="Logo Alura"></header>
 <main>
      <div class="left__div">
-            <textarea class="left__div__texto" placeholder="Digite seu texto"></textarea>
+            <textarea id="digite-texto" rows="10" class="left__div__texto" placeholder="Digite seu texto"></textarea>
             <div class="parte_inferior_left">
                 <div class="info">
                     <p class="inserir__botoes__obs"> <img src="/Assets/exclamacao.png" alt="exclamacao"> Apenas letras minúsculas e sem acento. </p>
                 </div>
                 <div class="inserir__botoes">
-                    <button class="inserir__botoes__botao1">Criptografar</button>
-                    <button class="inserir__botoes__botao2">Descriptografar</button>
+                    <button onclick= "converterTexto()" class="inserir__botoes__botao1">Criptografar</button>
+                    <button onclick= "descriptografarTexto()" class="inserir__botoes__botao2">Descriptografar</button>
                 </div>
             </div> 
     </div>
      <div class="right__div">
-        <img class= "right__div__imagem" src="/Assets/img_boneco.png" alt="desenho de boneco com lupa"> 
-        <h1 class="right__div__mensagem"> Nenhuma mensagem encontrada</h1>
-        <p class="right__div__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
-        <button class="right__div__botao_copiar"> Copiar </button>
+        <img id="desenho-lupa" class= "right__div__imagem" src="/Assets/img_boneco.png" alt="desenho de boneco com lupa">
+        <h1 id="nenhuma-mensagem" class="right__div__mensagem"> Nenhuma mensagem encontrada</h1>
+        <p id="mensagem-texto-direita" class="right__div__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+        <button onclick="right__div__botao_copiar"> Copiar </button>
      </div>          
 
 </main>

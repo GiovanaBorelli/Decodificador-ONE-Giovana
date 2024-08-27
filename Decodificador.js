@@ -40,27 +40,25 @@ function descriptografarTexto() {
 }
 
 function mostrarResultado(texto) {
-    // Ocultar a imagem e o título padrão
     document.getElementById("desenho-lupa").style.display = "none";
     document.getElementById("nenhuma-mensagem").style.display = "none";
     
-    // Atualizar o texto de saída
-    let outputText = document.getElementById("mensagem-texto-direita");
-    outputText.textContent = texto;
+    let mensagemTextoDireita = document.getElementById("mensagem-texto-direita");
+    mensagemTextoDireita.textContent = texto;
 }
 
 function mostrarBotaoCopiar() {
-    var botaoCopiar = document.querySelector('.copiar-btn');
+    let botaoCopiar = document.querySelector('.div__botao__copiar');
     botaoCopiar.style.display = 'block';
 }
 
 function aumentarTexto() {
-    var outputText = document.getElementById("output-text");
-    outputText.style.fontSize = "24px";
+    let mensagemTextoDireita = document.getElementById("mensagem-texto-direitat");
+    mensagemTextoDireita.style.fontSize = "24px";
 }
 
 function copiarTexto() {
-    const texto = document.getElementById('output-text').innerText;
+    const texto = document.getElementById('mensagem-texto-direita').innerText;
  
     const input = document.createElement('input');
     input.value = texto;
